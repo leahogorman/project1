@@ -1,0 +1,136 @@
+body {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+/* Header ================================= */
+header {
+  height: 5rem;
+  background-color: slategray;
+}
+.title {
+  padding-top: 10px;
+  margin-left: 2rem;
+  color: navy;
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+}
+.titleBtn {
+  background-color: slategray;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.titleBtn:visited {
+  outline: none;
+  border: none;
+}
+/* Main ========================================================== */
+main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+/* Search Bar ======================================================= */
+article {
+  grid-column: 1;
+  background-color: white;
+}
+#searchBox {
+  margin-left: 20%;
+  margin-top: 3rem;
+  width: 100%;
+  height: 60%;
+}
+.search {
+  display: grid;
+  grid-template-columns: 1fr,1fr;
+}
+#searchBar {
+  grid-column: 1;
+  width: 100%;
+  height: 50px;
+}
+#searchBtn {
+  grid-column: 2;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 50px;
+  width: 100px;
+  background-color: navy;
+}
+/* Sidebar ======================================================= */
+.sidebar {
+  text-align: center;
+  grid-column: 2;
+  background-color: powderblue;
+  width: 300px;
+  height: 90vh;
+}
+.sidebarCo {
+  padding-top: 0;
+  text-align: center;
+  padding: 2rem;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+#recentSearch {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 1rem;
+  margin-left: 12%;
+}
+/* Results =====================================================*/
+#results {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: none;
+  background-color: rgb(135, 145, 155);
+  border-radius: 30px;
+  width: 80%;
+  height: 600px;
+  left: -30px;
+}
+#jobResults {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  width: 100%;
+  height: 275px;
+  background-color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: auto;
+  white-space: nowrap;
+}
+#bookResults {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2px;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 275px;
+  background-color: white;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
+
+/* Footer ========================================================= */
+footer {
+  text-align: center;
+  height: 5rem;
+  background-color: slategray;
+  font-weight: bold;
+  color: navy;
+}
